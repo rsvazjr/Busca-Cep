@@ -24,6 +24,7 @@ Tutorial de criação deste app: http://bit.ly/2kcGFQh
 -   Adicionar um IconButton na AppBar para compartilhar o CEP (utilize o [plugin share](https://pub.dev/packages/share))
 
 ## Licença
+RICARDO SERGIO VAZ JUNIOR RA190010687
 
     Copyright 2019 Kleber de Oliveira Andrade
     

@@ -1,33 +1,37 @@
+// To parse this JSON data, do
+//
+//     final resultCep = resultCepFromJson(jsonString);
+
 import 'dart:convert';
 
 class ResultCep {
-  String cep;
-  String logradouro;
-  String complemento;
-  String bairro;
-  String localidade;
-  String uf;
-  String unidade;
-  String ibge;
-  String gia;
+    String cep;
+    String logradouro;
+    String complemento;
+    String bairro;
+    String localidade;
+    String uf;
+    String unidade;
+    String ibge;
+    String gia;
 
-  ResultCep({
-    this.cep,
-    this.logradouro,
-    this.complemento,
-    this.bairro,
-    this.localidade,
-    this.uf,
-    this.unidade,
-    this.ibge,
-    this.gia,
-  });
+    ResultCep({
+        this.cep,
+        this.logradouro,
+        this.complemento,
+        this.bairro,
+        this.localidade,
+        this.uf,
+        this.unidade,
+        this.ibge,
+        this.gia,
+    });
 
-  factory ResultCep.fromJson(String str) => ResultCep.fromMap(json.decode(str));
+    factory ResultCep.fromJson(String str) => ResultCep.fromMap(json.decode(str));
 
-  String toJson() => json.encode(toMap());
+    String toJson() => json.encode(toMap());
 
-  factory ResultCep.fromMap(Map<String, dynamic> json) => ResultCep(
+    factory ResultCep.fromMap(Map<String, dynamic> json) => ResultCep(
         cep: json["cep"] == null ? null : json["cep"],
         logradouro: json["logradouro"] == null ? null : json["logradouro"],
         complemento: json["complemento"] == null ? null : json["complemento"],
@@ -37,9 +41,9 @@ class ResultCep {
         unidade: json["unidade"] == null ? null : json["unidade"],
         ibge: json["ibge"] == null ? null : json["ibge"],
         gia: json["gia"] == null ? null : json["gia"],
-      );
+    );
 
-  Map<String, dynamic> toMap() => {
+    Map<String, dynamic> toMap() => {
         "cep": cep == null ? null : cep,
         "logradouro": logradouro == null ? null : logradouro,
         "complemento": complemento == null ? null : complemento,
@@ -49,5 +53,5 @@ class ResultCep {
         "unidade": unidade == null ? null : unidade,
         "ibge": ibge == null ? null : ibge,
         "gia": gia == null ? null : gia,
-      };
+    };
 }

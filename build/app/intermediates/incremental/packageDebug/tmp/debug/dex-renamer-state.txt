@@ -1,0 +1,4 @@
+#Mon Nov 11 21:12:01 BRST 2019
+base.0=C\:\\Users\\lab2d\\Desktop\\RS\\Consultar-CEP-master\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex
